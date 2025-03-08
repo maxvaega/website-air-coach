@@ -3,28 +3,28 @@
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 100%;
-  --foreground: 222.2 84% 4.9%;
+  --background: 0 0% 100%; /* White for cleanliness and simplicity */
+  --foreground: 0 0% 20%; /* Dark gray for text */
 
-  --primary: 210 100% 50%;
-  --primary-foreground: 210 40% 98%;
+  --primary: 210 100% 35%; /* Deep blue for trust and professionalism */
+  --primary-foreground: 210 40% 98%; /* Light blue for contrast */
 
-  --secondary: 25 95% 53%;
-  --secondary-foreground: 210 40% 98%;
+  --secondary: 142 71% 45%; /* Green for reliability and growth */
+  --secondary-foreground: 210 40% 98%; /* Light blue for contrast */
 
-  --accent: 142 71% 45%;
-  --accent-foreground: 222.2 47.4% 11.2%;
+  --accent: 39 100% 50%; /* Orange for energy and movement */
+  --accent-foreground: 0 0% 100%; /* White for contrast */
 
-  --muted: 210 40% 96.1%;
-  --muted-foreground: 215.4 16.3% 46.9%;
+  --muted: 0 0% 90%; /* Light gray for secondary elements */
+  --muted-foreground: 0 0% 40%; /* Medium gray for text on muted background */
 
-  --card: 0 0% 100%;
-  --card-foreground: 222.2 84% 4.9%;
+  --card: 0 0% 100%; /* White for card background */
+  --card-foreground: 0 0% 20%; /* Dark gray for text on card */
 
-  --border: 214.3 31.8% 91.4%;
-  --input: 214.3 31.8% 91.4%;
+  --border: 0 0% 80%; /* Light gray for borders */
+  --input: 0 0% 80%; /* Light gray for input fields */
 
-  --ring: 210 100% 50%;
+  --ring: 210 100% 35%; /* Deep blue for focus rings */
 }
 
 .font-heading {
@@ -51,7 +51,7 @@
   }
 
   .btn-secondary {
-    @apply bg-white text-primary border border-primary font-medium py-3 px-6 rounded-lg shadow-sm hover:bg-muted transition-all;
+    @apply bg-secondary text-white font-medium py-3 px-6 rounded-lg shadow-md hover:bg-secondary/90 transition-all;
   }
 
   .section-title {
