@@ -29,7 +29,7 @@ export default function Home() {
             <div className="relative">
               <div className="relative h-[400px] md:h-[500px] w-full animate-float">
                 <Image
-                  src="/placeholder.svg?height=500&width=500"
+                  src="/mockup-phone.png?height=500&width=500"
                   alt="Paracadutista in volo"
                   fill
                   className="object-contain"
@@ -161,7 +161,7 @@ export default function Home() {
             <div className="bg-white p-8 rounded-xl shadow-md">
               <div className="flex items-center gap-4 mb-4">
                 <div className="h-12 w-12 rounded-full overflow-hidden relative">
-                  <Image src="/placeholder.svg?height=100&width=100" alt="Marco" fill className="object-cover" />
+                  <Image src="/single-person-2.png?height=100&width=100" alt="Marco" fill className="object-cover" />
                 </div>
                 <div>
                   <h4 className="font-bold">Marco</h4>
@@ -177,7 +177,7 @@ export default function Home() {
             <div className="bg-white p-8 rounded-xl shadow-md">
               <div className="flex items-center gap-4 mb-4">
                 <div className="h-12 w-12 rounded-full overflow-hidden relative">
-                  <Image src="/placeholder.svg?height=100&width=100" alt="Laura" fill className="object-cover" />
+                  <Image src="/single-person-1.png?height=100&width=100" alt="Laura" fill className="object-cover" />
                 </div>
                 <div>
                   <h4 className="font-bold">Laura</h4>
@@ -193,7 +193,7 @@ export default function Home() {
             <div className="bg-white p-8 rounded-xl shadow-md">
               <div className="flex items-center gap-4 mb-4">
                 <div className="h-12 w-12 rounded-full overflow-hidden relative">
-                  <Image src="/placeholder.svg?height=100&width=100" alt="Giovanni" fill className="object-cover" />
+                  <Image src="/single-person-3.png?height=100&width=100" alt="Giovanni" fill className="object-cover" />
                 </div>
                 <div>
                   <h4 className="font-bold">Giovanni</h4>

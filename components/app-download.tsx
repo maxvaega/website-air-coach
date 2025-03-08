@@ -13,7 +13,7 @@ export default function AppDownload() {
         <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
           <Link href="#" className="inline-block">
             <Image
-              src="/placeholder.svg?height=60&width=200"
+              src="/apple.png?height=60&width=200"
               alt="Scarica su App Store"
               width={200}
               height={60}
@@ -22,7 +22,7 @@ export default function AppDownload() {
           </Link>
           <Link href="#" className="inline-block">
             <Image
-              src="/placeholder.svg?height=60&width=200"
+              src="/google-play.png?height=60&width=200"
               alt="Scarica su Google Play"
               width={200}
               height={60}
