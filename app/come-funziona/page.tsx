@@ -34,7 +34,7 @@ export default function ComeFunziona() {
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Link href="#" className="inline-block">
                       <Image
-                        src="/placeholder.svg?height=50&width=150"
+                        src="/apple.png?height=50&width=150"
                         alt="Scarica su App Store"
                         width={150}
                         height={50}
@@ -43,7 +43,7 @@ export default function ComeFunziona() {
                     </Link>
                     <Link href="#" className="inline-block">
                       <Image
-                        src="/placeholder.svg?height=50&width=150"
+                        src="/google-play.png?height=50&width=150"
                         alt="Scarica su Google Play"
                         width={150}
                         height={50}

@@ -20,7 +20,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: "AIR Coach: Always In Reach",
   description: "La tua guida personale per il paracadutismo. Sempre disponibile.",
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -38,7 +38,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-
-
-import './globals.css'
