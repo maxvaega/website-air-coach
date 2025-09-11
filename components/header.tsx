@@ -17,7 +17,7 @@ export function Header() {
           <Link href="/" className="flex items-center space-x-3">
             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center p-1">
               <Image
-                src="/air-coach-logo-small.jpg"
+                src="/favicon.svg"
                 alt="AIR Coach Logo"
                 width={32}
                 height={32}
