@@ -5,8 +5,8 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'AIR Coach: Always In Reach',
+  description: 'La tua guida personale per il paracadutismo. Sempre disponibile ',
   generator: 'v0.app',
 }
 

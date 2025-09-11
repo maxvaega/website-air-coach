@@ -76,7 +76,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-muted-foreground">
-          <p>&copy; 2024 AIR Coach. Tutti i diritti riservati. App in fase beta.</p>
+          <p>&copy; 2025 AIR Coach. Tutti i diritti riservati. App in fase beta.</p>
         </div>
       </div>
     </footer>
