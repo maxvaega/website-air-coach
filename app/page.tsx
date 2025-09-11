@@ -164,7 +164,7 @@ export default function HomePage() {
 
             <div className="relative">
               <img
-                src="/smartphone-showing-parachuting-app-interface-with-.jpg"
+                src="/smartphone-air-coach.jpg"
                 alt="Interfaccia dell'app AIR Coach"
                 className="rounded-lg shadow-xl mx-auto"
               />
