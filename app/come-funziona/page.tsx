@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Download, UserPlus, MessageCircle, Play } from "lucide-react"
+import Link from "next/link"
 
 export default function ComeFunzionaPage() {
   return (
@@ -163,34 +164,7 @@ export default function ComeFunzionaPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="p-6 hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
-                <h4 className="font-semibold mb-3 text-primary">Analisi Condizioni Meteo</h4>
-                <p className="text-muted-foreground text-sm">
-                  Valutazione automatica delle condizioni meteorologiche per determinare la sicurezza del salto
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6 hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <h4 className="font-semibold mb-3 text-primary">Checklist Pre-Salto</h4>
-                <p className="text-muted-foreground text-sm">
-                  Liste di controllo personalizzate per ogni tipo di salto e livello di esperienza
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6 hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <h4 className="font-semibold mb-3 text-primary">Tracciamento Progressi</h4>
-                <p className="text-muted-foreground text-sm">
-                  Monitora i tuoi miglioramenti e ricevi consigli per il prossimo livello
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6 hover:shadow-lg transition-shadow">
-              <CardContent className="pt-6">
-                <h4 className="font-semibold mb-3 text-primary">Procedure di Emergenza</h4>
+                <h4 className="font-semibold mb-3 text-primary">Rivedere le procedure</h4>
                 <p className="text-muted-foreground text-sm">
                   Accesso rapido alle procedure di sicurezza e gestione delle emergenze
                 </p>
@@ -199,18 +173,18 @@ export default function ComeFunzionaPage() {
 
             <Card className="p-6 hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
-                <h4 className="font-semibold mb-3 text-primary">Community di Paracadutisti</h4>
+                <h4 className="font-semibold mb-3 text-primary">Preparati per l'esame</h4>
                 <p className="text-muted-foreground text-sm">
-                  Connettiti con altri paracadutisti e condividi esperienze
+                  L'esame di teoria si avvicina? Fai pratica con quiz interattivi e ricevi feedback immediati
                 </p>
               </CardContent>
             </Card>
 
             <Card className="p-6 hover:shadow-lg transition-shadow">
               <CardContent className="pt-6">
-                <h4 className="font-semibold mb-3 text-primary">Modalità Offline</h4>
+                <h4 className="font-semibold mb-3 text-primary">Esercizi pratici</h4>
                 <p className="text-muted-foreground text-sm">
-                  Accesso alle informazioni essenziali anche senza connessione internet
+                  Suggerimenti su esercizi pratici da fare a terra e in aria per migliorare la tua tecnica
                 </p>
               </CardContent>
             </Card>
@@ -224,16 +198,11 @@ export default function ComeFunzionaPage() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Pronto a Iniziare?</h2>
           <p className="text-xl mb-8 opacity-90">Richiedi l'accesso alla beta e sii tra i primi a provare AIR Coach</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="text-lg px-8">
-              Richiedi Accesso Beta
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="text-lg px-8 bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
-            >
-              Scopri di Più
-            </Button>
+            <Link href="/contatti">
+              <Button size="lg" variant="secondary" className="text-lg px-8">
+                Richiedi Accesso Beta
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

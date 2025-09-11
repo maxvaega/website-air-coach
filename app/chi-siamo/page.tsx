@@ -26,7 +26,7 @@ export default function ChiSiamoPage() {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">La Nostra Missione</h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              AIR Coach è nata per supportare gli allievi paracadutisti, combinando la passione per il paracadutismo con
+              AIR Coach è nata per supportare i paracadutisti meno esperti, combinando la passione per il paracadutismo con
               tecnologia avanzata. Crediamo che ogni persona dovrebbe avere accesso a una guida esperta, sempre e
               ovunque.
             </p>
@@ -123,7 +123,7 @@ export default function ChiSiamoPage() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Massimo</h3>
                 <Badge variant="outline" className="mb-3">
-                  Coach & Tech Enthusiast
+                  Esperto di Paracadutismo & AI
                 </Badge>
                 <p className="text-muted-foreground text-sm">
                   Coach di paracadutismo con la passione per le nuove tecnologie. Combina esperienza sul campo con
@@ -143,8 +143,8 @@ export default function ChiSiamoPage() {
                   Istruttrice & Jump Master
                 </Badge>
                 <p className="text-muted-foreground text-sm">
-                  Istruttrice di paracadutismo e jump master, esperta di tecnologia. Garantisce che ogni funzionalità
-                  sia sicura e pratica.
+                  Istruttrice di paracadutismo, coach e jump master. Esperta di tecnologia, garantisce che la didattica 
+                  sia sempre all'avanguardia.
                 </p>
               </CardContent>
             </Card>
@@ -160,8 +160,7 @@ export default function ChiSiamoPage() {
                   Coach & Frontend Developer
                 </Badge>
                 <p className="text-muted-foreground text-sm">
-                  Coach di paracadutismo ed esperto di sviluppo frontend. Crea interfacce intuitive per l'esperienza
-                  utente.
+                  Coach di paracadutismo ed esperto di sviluppo frontend. Rende l'applicazione intuitiva e user-friendly.
                 </p>
               </CardContent>
             </Card>
@@ -197,9 +196,9 @@ export default function ChiSiamoPage() {
                 <CardContent className="pt-6">
                   <h3 className="text-xl font-semibold mb-4 text-primary">L'Idea</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Tutto è iniziato durante una sessione di addestramento, quando abbiamo notato quanto fosse difficile
-                    per gli allievi ricordare tutte le procedure e i consigli ricevuti durante le lezioni. Ci siamo
-                    chiesti: "E se potessimo creare un assistente virtuale che fosse sempre disponibile?"
+                    Tutto è iniziato quando abbiamo capito che le nuove tecnologie potevano aiutare i paracadutisti
+                    a crescere e imparare più efficacemente le procedure e i consigli utili per una crescita sicura e consapevole. Ci siamo
+                    chiesti: "E se potessimo creare lo strumento che avremmo voluto avere quando abbiamo iniziato noi?"
                   </p>
                 </CardContent>
               </Card>
@@ -208,9 +207,9 @@ export default function ChiSiamoPage() {
                 <CardContent className="pt-6">
                   <h3 className="text-xl font-semibold mb-4 text-accent">Lo Sviluppo</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Combinando la nostra esperienza nel paracadutismo con competenze tecnologiche avanzate, abbiamo
-                    iniziato a sviluppare AIR Coach. Ogni funzionalità è stata progettata e testata da istruttori
-                    qualificati per garantire accuratezza e sicurezza.
+                    Combinando la nostra esperienza nel paracadutismo con le nostre competenze e le nuove tecnologie LLM, abbiamo
+                    iniziato a sviluppare AIR Coach. Ogni funzionalità è stata progettata e testata da paracadutisti esperti
+                    per garantire precisione e sicurezza.
                   </p>
                 </CardContent>
               </Card>
@@ -219,8 +218,10 @@ export default function ChiSiamoPage() {
                 <CardContent className="pt-6">
                   <h3 className="text-xl font-semibold mb-4 text-green-600">Il Futuro</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Oggi AIR Coach è in fase beta, ma la nostra visione va oltre. Vogliamo creare una community globale
+                    Oggi AIR Coach è in fase beta in Italia, ma la nostra visione va oltre. Vogliamo creare una community globale
                     di paracadutisti connessi, dove la sicurezza e l'apprendimento continuo sono al centro di tutto.
+                    Vogliamo che ogni paracadutista, ovunque si trovi, abbia sempre un coach esperto a portata di mano.
+
                   </p>
                 </CardContent>
               </Card>

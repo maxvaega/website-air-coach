@@ -259,9 +259,11 @@ export default function HomePage() {
             Unisciti alla community di paracadutisti che si affidano ad AIR Coach
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" variant="secondary" className="text-lg px-8">
-              Richiedi Accesso Beta
-            </Button>
+            <Link href="/contatti">
+              <Button size="lg" variant="secondary" className="text-lg px-8">
+                Richiedi Accesso alla Beta
+              </Button>
+            </Link>
             <Button
               size="lg"
               variant="outline"
