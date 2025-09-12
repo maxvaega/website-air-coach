@@ -157,7 +157,7 @@ export default function ChiSiamoPage() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Diego</h3>
                 <Badge variant="outline" className="mb-3">
-                  Frontend Developer & Paracadutista
+                  Seniior Developer & Skydiver
                 </Badge>
                 <p className="text-muted-foreground text-sm">
                   Sviluppa interfacce che volano quanto lui. Crea app così intuitive 
