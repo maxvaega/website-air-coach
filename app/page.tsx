@@ -52,7 +52,7 @@ export default function HomePage() {
           {/* Hero Image Placeholder */}
           <div className="relative max-w-4xl mx-auto">
             <img
-              src="/parachutist-in-flight-with-open-blue-sky-and-cloud.jpg"
+              src="/parachutist-in-flight-with-open-blue-sky-and-cloud2.jpg"
               alt="Paracadutista in volo con cielo aperto"
               className="rounded-lg shadow-2xl"
             />
