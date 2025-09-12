@@ -212,7 +212,7 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-muted-foreground mb-4">
-                  "AIR Coach è come avere un istruttore personale sempre con me. Mi ha aiutato a superare le mie paure."
+                  "Con AIR Coach è come avere un Amico fidato sempre con me. Mi ha aiutato a superare le mie paure."
                 </p>
                 <div className="flex items-center">
                   <div className="w-10 h-10 bg-accent/10 rounded-full flex items-center justify-center mr-3">

@@ -106,13 +106,13 @@ export default function ComeFunzionaPage() {
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-accent rounded-full mt-2"></div>
                   <p className="text-muted-foreground">
-                    <strong>Consigli Personalizzati:</strong> Suggerimenti basati sul tuo livello e esperienza
+                    <strong>Consigli Verificati:</strong> Suggerimenti sicuri basati sul tuo livello
                   </p>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-green-500 rounded-full mt-2"></div>
                   <p className="text-muted-foreground">
-                    <strong>Sicurezza Prioritaria:</strong> Avvisi e promemoria per ogni situazione
+                    <strong>Sicurezza al primo posto:</strong> Consigli basati sulle migliori pratiche di sicurezza
                   </p>
                 </div>
               </div>
