@@ -126,8 +126,8 @@ export default function ChiSiamoPage() {
                   Esperto di Paracadutismo & AI
                 </Badge>
                 <p className="text-muted-foreground text-sm">
-                  Coach di paracadutismo con la passione per le nuove tecnologie. Combina esperienza sul campo con
-                  visione innovativa.
+                  dei cieli che ha deciso di portare l'intelligenza artificiale a 4000 metri di altezza.
+                  Quando non sta saltando, programma il futuro del paracadutismo.
                 </p>
               </CardContent>
             </Card>
@@ -143,8 +143,8 @@ export default function ChiSiamoPage() {
                   Istruttrice & Jump Master
                 </Badge>
                 <p className="text-muted-foreground text-sm">
-                  Istruttrice di paracadutismo, coach e jump master. Esperta di tecnologia, garantisce che la didattica 
-                  sia sempre all'avanguardia.
+                  Trasforma timidi allievi in paracadutisti sicuri. La sua missione? 
+                  Rendere il cielo accessibile e sicuro per tutti.
                 </p>
               </CardContent>
             </Card>
@@ -157,10 +157,11 @@ export default function ChiSiamoPage() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Diego</h3>
                 <Badge variant="outline" className="mb-3">
-                  Coach & Frontend Developer
+                  Frontend Developer & Paracadutista Esperto
                 </Badge>
                 <p className="text-muted-foreground text-sm">
-                  Coach di paracadutismo ed esperto di sviluppo frontend. Rende l'applicazione intuitiva e user-friendly.
+                  Sviluppa interfacce che volano quanto lui. Crea app così intuitive 
+                  che anche a 4000 metri di altezza sono facili da usare.
                 </p>
               </CardContent>
             </Card>
@@ -176,8 +177,8 @@ export default function ChiSiamoPage() {
                   Backend & Cloud Expert
                 </Badge>
                 <p className="text-muted-foreground text-sm">
-                  Esperto di backend e cloud, vuole tenere i piedi per terra. Garantisce affidabilità e sicurezza
-                  dell'infrastruttura.
+                  Esperto di cloud che ironicamente preferisce tenere i piedi per terra. 
+                  Fa volare i dati mentre gli altri volano per davvero.
                 </p>
               </CardContent>
             </Card>
