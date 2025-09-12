@@ -126,7 +126,7 @@ export default function ChiSiamoPage() {
                   Esperto di Paracadutismo & AI
                 </Badge>
                 <p className="text-muted-foreground text-sm">
-                  dei cieli che ha deciso di portare l'intelligenza artificiale a 4000 metri di altezza.
+                  Esperto dei cieli, ha deciso di portare in quota l'intelligenza artificiale.
                   Quando non sta saltando, programma il futuro del paracadutismo.
                 </p>
               </CardContent>
@@ -144,7 +144,7 @@ export default function ChiSiamoPage() {
                 </Badge>
                 <p className="text-muted-foreground text-sm">
                   Trasforma timidi allievi in paracadutisti sicuri. La sua missione? 
-                  Rendere il cielo accessibile e sicuro per tutti.
+                  Rendere il cielo sicuro per tutti.
                 </p>
               </CardContent>
             </Card>
@@ -157,7 +157,7 @@ export default function ChiSiamoPage() {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Diego</h3>
                 <Badge variant="outline" className="mb-3">
-                  Frontend Developer & Paracadutista Esperto
+                  Frontend Developer & Paracadutista
                 </Badge>
                 <p className="text-muted-foreground text-sm">
                   Sviluppa interfacce che volano quanto lui. Crea app così intuitive 
