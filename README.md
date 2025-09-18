@@ -1,4 +1,4 @@
-# Gwebsite-air-coach
+# website-air-coach
 
 This document provides a comprehensive overview of the `website-air-coach` project, its structure, and development conventions to be used as instructional context for future interactions.
 
@@ -48,17 +48,22 @@ The project uses `pnpm` as the package manager (inferred from `pnpm-lock.yaml`).
   pnpm run build
   ```
 
-- **To start the production server:**
+- **To start the production server (serves static files):**
   ```bash
   pnpm run start
   ```
+  **Note**: This serves the static files from the `out/` directory using `serve`. Make sure to run `pnpm run build` first.
 
 - **To run the linter:**
   ```bash
   pnpm run lint
   ```
 
-**Note**: The `next.config.mjs` file is configured to ignore ESLint and TypeScript errors during the build process. This should be reviewed before deploying to a critical production environment.
+**Important Notes**:
+- The project is configured for static export (`output: 'export'` in `next.config.mjs`)
+- The `next.config.mjs` file ignores ESLint and TypeScript errors during builds
+- The production server uses `serve` to host static files instead of the Next.js server
+- Always run `pnpm run build` before `pnpm run start` to generate the latest static files
 
 ## Development Conventions
 
