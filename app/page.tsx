@@ -94,7 +94,8 @@ export default function HomePage() {
                   <Users className="w-8 h-8 text-accent" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Ti aiuta a crescere</h3>
-                <p className="text-muted-foreground">Consigli su misura per il tuo livello di esperienza e obiettivi</p>
+                <p className="text-muted-foreground">Consigli su misura per il tuo livello di esperienza. 
+                  Esame di teoria in arrivo? Chiedi ad AIR Coach!</p>
               </CardContent>
             </Card>
 
