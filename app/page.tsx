@@ -83,7 +83,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Sempre con te</h3>
                 <p className="text-muted-foreground">
-                  Una guida esperta per ogni salto, sempre disponibile nella tua tasca
+                  Una guida esperta sempre disponibile nella tua tasca
                 </p>
               </CardContent>
             </Card>
@@ -103,7 +103,7 @@ export default function HomePage() {
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="w-8 h-8 text-green-600" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Ti protegge</h3>
+                <h3 className="text-xl font-semibold mb-3">Sicurezza</h3>
                 <p className="text-muted-foreground">
                   Tutto il supporto di cui hai bisogno per divertirti in sicurezza
                 </p>
