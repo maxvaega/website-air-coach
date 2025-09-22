@@ -2,76 +2,131 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-# Project Overview
+## Project Context
 
-This is a Next.js marketing website for "AIR Coach," a skydiving mobile application. The website serves to attract beta testers and showcase app features.
+Next.js marketing website for AIR Coach skydiving app. Italian content, production at www.air-coach.com.
 
-## Tech Stack
+## Repository Etiquette
 
-- **Framework**: Next.js 14 with App Router
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS v4
-- **UI Components**: shadcn/ui (built on Radix UI)
-- **Icons**: Lucide React
-- **Fonts**: Geist Sans and Geist Mono
-- **Package Manager**: pnpm
-- **Analytics**: Vercel Analytics
+- **Branch naming**: `feature/*`, `fix/*`, `refactor/*`
+- **Quality gates**: Always run `pnpm run lint` before commits
+- **Build verification**: `pnpm run build` required before deployment
+- **Merge strategy**: Squash and merge preferred for feature branches
 
-## Development Commands
+## Environment Setup
+
+- **Node.js**: 18+ required
+- **Package Manager**: pnpm only (avoid npm/yarn for consistency)
+- **IDE**: VS Code recommended with TypeScript extension
+- **Dependencies**: Run `pnpm install` in project root
+
+## Claude Workflow Commands
 
 ```bash
-# Install dependencies
-pnpm install
+# Development workflow
+pnpm run dev                    # Start dev server (localhost:3000)
 
-# Development server
-pnpm run dev
+# Quality assurance
+pnpm run lint                   # ESLint check (mandatory before commits)
+pnpm run build                  # Build static export (mandatory before deployment)
 
-# Production build
-pnpm run build
+# Production testing
+pnpm run start                  # Serve static files from out/ (run after build)
 
-# Start production server (serves static files from out/ directory)
-pnpm run start
-
-# Lint code
-pnpm run lint
+# Full quality check
+pnpm run lint && pnpm run build # Complete validation pipeline
 ```
 
-## Architecture
+## Development Guidelines
 
-### App Router Structure
-- `app/`: Pages and layouts using Next.js App Router
-  - `app/layout.tsx`: Root layout with font setup and analytics
-  - `app/page.tsx`: Main landing page
-  - `app/chi-siamo/`: About Us page
-  - `app/come-funziona/`: How It Works page
-  - `app/contatti/`: Contact page
+### Code Style & Conventions
+- **TypeScript**: Strict mode enabled, use absolute imports with `@/*` aliases
+- **Components**: Follow shadcn/ui patterns, `.tsx` extension for React components
+- **Styling**: Tailwind CSS v4 classes, avoid custom CSS unless necessary
+- **File naming**: kebab-case for files, PascalCase for React components
 
-### Components
-- `components/ui/`: Complete shadcn/ui component library
-- `components/header.tsx` and `components/footer.tsx`: Layout components
-- `components/theme-provider.tsx`: Theme management
+### Component Architecture
+```
+components/
+├── ui/              # shadcn/ui components (don't modify directly)
+├── header.tsx       # Site navigation
+├── footer.tsx       # Site footer
+└── theme-provider.tsx # Theme context
+```
 
-### Configuration
-- Uses absolute imports with `@/*` path aliases
-- TypeScript configured with strict mode
-- PostCSS configured for Tailwind CSS v4
-- **Important**: `next.config.mjs` ignores ESLint and TypeScript errors during builds
+### Page Structure
+```
+app/
+├── layout.tsx       # Root layout (fonts, analytics)
+├── page.tsx         # Landing page
+├── chi-siamo/       # About page (Italian)
+├── come-funziona/   # How it works (Italian)
+└── contatti/        # Contact page (Italian)
+```
 
-## UI Component System
+## Testing & Quality Assurance
 
-This project uses shadcn/ui components extensively. The configuration in `components.json` shows:
-- Style: "new-york"
-- Base color: "neutral"
-- CSS variables enabled
-- Icons from Lucide library
+### Current State
+- **Testing Framework**: None configured (manual testing only)
+- **Quality Gates**: ESLint + Build verification required
+- **Type Checking**: TypeScript strict mode
+- **Build Process**: Static export (`output: 'export'`)
 
-To add new shadcn/ui components, use the CLI with the existing configuration.
+### Quality Workflow
+1. **Pre-commit**: Always run `pnpm run lint`
+2. **Pre-deployment**: Always run `pnpm run build`
+3. **Local testing**: Use `pnpm run start` to test built static files
+4. **Error handling**: Build process ignores lint/type errors (review manually)
 
-## Development Notes
+### Known Behaviors & Warnings
+- **Build Configuration**: `next.config.mjs` ignores ESLint/TypeScript errors during builds
+- **Static Export**: Project configured for static generation, not SSR
+- **Images**: Unoptimized in Next.js config for static export compatibility
+- **Content**: Italian language throughout (chi-siamo, come-funziona, contatti)
 
-- No test framework is currently configured
-- Images are unoptimized in Next.js config
-- Build process ignores lint and type errors (review before production deployment)
-- Italian language content throughout the website
-- **Static Export**: Project is configured with `output: 'export'` for static site generation
-- **Production Server**: Uses `serve` to host static files from `out/` directory instead of Next.js server
+## Component System
+
+### shadcn/ui Configuration
+- **Style**: "new-york" variant
+- **Base color**: "neutral" theme
+- **Icons**: Lucide React library
+- **Path**: `@/components/ui/*`
+
+### Adding New Components
+```bash
+# Use shadcn CLI with existing config
+npx shadcn-ui add [component-name]
+```
+
+## Deployment & Infrastructure
+
+### Production Environment
+- **Live URL**: www.air-coach.com
+- **Platform**: Cloudflare Pages + Workers
+- **Auto-deploy**: Push to `main` branch
+- **Build**: `pnpm run build` → `out/` directory
+
+### API Integration
+- **Backend**: Python API on Vercel (air-coach.vercel.app)
+- **Proxy**: Cloudflare Worker routes `/api/*` to backend (see `cloudflare/` repository folder)
+- **Benefits**: Single domain, CORS handling, CDN acceleration
+
+## Troubleshooting
+
+### Common Issues
+- **Build fails**: Check `pnpm run lint` first
+- **Static export errors**: Verify no SSR features used
+- **Component errors**: Ensure shadcn/ui components imported correctly
+- **Path issues**: Use `@/*` aliases, not relative imports
+
+### Debug Commands
+```bash
+# Check for type errors
+npx tsc --noEmit
+
+# Verbose build output
+pnpm run build --verbose
+
+# Check dependencies
+pnpm list
+```
