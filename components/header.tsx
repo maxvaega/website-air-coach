@@ -44,9 +44,11 @@ export function Header() {
             <Link href="/contatti" className="hover:text-accent transition-colors">
               Contatti
             </Link>
-            <Button variant="secondary" size="sm">
-              Richiedi Accesso Beta
-            </Button>
+            <Link href="/contatti">
+              <Button variant="secondary" size="sm">
+                Richiedi Accesso Beta
+              </Button>
+            </Link>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -71,9 +73,11 @@ export function Header() {
               <Link href="/contatti" className="hover:text-accent transition-colors">
                 Contatti
               </Link>
-              <Button variant="secondary" size="sm" className="w-fit">
-                Richiedi Accesso Beta
-              </Button>
+              <Link href="/contatti">
+                <Button variant="secondary" size="sm" className="w-fit">
+                  Richiedi Accesso Beta
+                </Button>
+              </Link>
             </div>
           </nav>
         )}

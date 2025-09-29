@@ -26,9 +26,9 @@ export default function ChiSiamoPage() {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">La Nostra Missione</h2>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              AIR Coach è nata per supportare i paracadutisti meno esperti, combinando la passione per il paracadutismo con
-              tecnologia avanzata. Crediamo che ogni persona dovrebbe avere accesso a una guida esperta, sempre e
-              ovunque.
+              AIR Coach è nata per supportare i paracadutisti dando un accesso facile e veloce alle competenze che cercano. 
+              Combiniamo la passione per il paracadutismo con tecnologia avanzata. 
+              Crediamo che ogni persona dovrebbe avere accesso a una guida esperta, sempre e ovunque.
             </p>
           </div>
 
@@ -96,7 +96,7 @@ export default function ChiSiamoPage() {
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <TrendingUp className="w-8 h-8 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Progresso</h3>
+                <h3 className="text-xl font-semibold mb-3">Crescita Personale</h3>
                 <p className="text-muted-foreground">
                   Aiutiamo ogni paracadutista a crescere e migliorare costantemente le proprie competenze
                 </p>
@@ -195,7 +195,7 @@ export default function ChiSiamoPage() {
             <div className="space-y-8">
               <Card className="p-8">
                 <CardContent className="pt-6">
-                  <h3 className="text-xl font-semibold mb-4 text-primary">L'Idea</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-primary text-center">L'Idea</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Tutto è iniziato quando abbiamo capito che le nuove tecnologie potevano aiutare i paracadutisti
                     a crescere e imparare più efficacemente le procedure e i consigli utili per una crescita sicura e consapevole. Ci siamo
@@ -206,7 +206,7 @@ export default function ChiSiamoPage() {
 
               <Card className="p-8">
                 <CardContent className="pt-6">
-                  <h3 className="text-xl font-semibold mb-4 text-accent">Lo Sviluppo</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-accent text-center">Lo Sviluppo</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Combinando la nostra esperienza nel paracadutismo con le nostre competenze e le nuove tecnologie LLM, abbiamo
                     iniziato a sviluppare AIR Coach. Ogni funzionalità è stata progettata e testata da paracadutisti esperti
@@ -217,12 +217,11 @@ export default function ChiSiamoPage() {
 
               <Card className="p-8">
                 <CardContent className="pt-6">
-                  <h3 className="text-xl font-semibold mb-4 text-green-600">Il Futuro</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-green-600 text-center">Il Futuro</h3>
                   <p className="text-muted-foreground leading-relaxed">
                     Oggi AIR Coach è in fase beta in Italia, ma la nostra visione va oltre. Vogliamo creare una community globale
-                    di paracadutisti connessi, dove la sicurezza e l'apprendimento continuo sono al centro di tutto.
+                    di paracadutisti, dove la sicurezza e l'apprendimento continuo sono al centro di tutto.
                     Vogliamo che ogni paracadutista, ovunque si trovi, abbia sempre un coach esperto a portata di mano.
-
                   </p>
                 </CardContent>
               </Card>
