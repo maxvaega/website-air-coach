@@ -2,131 +2,75 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Project Context
+## Project Overview
 
-Next.js marketing website for AIR Coach skydiving app. Italian content, production at www.air-coach.com.
+This is a Next.js marketing website for "AIR Coach," a skydiving mobile app. The site is built with Next.js 14 (App Router), TypeScript, Tailwind CSS v4, and shadcn/ui components.
 
-## Repository Etiquette
+## Development Commands
 
-- **Branch naming**: `feature/*`, `fix/*`, `refactor/*`
-- **Quality gates**: Always run `pnpm run lint` before commits
-- **Build verification**: `pnpm run build` required before deployment
-- **Merge strategy**: Squash and merge preferred for feature branches
+**Package Manager**: This project uses `pnpm` (evidenced by `pnpm-lock.yaml`)
 
-## Environment Setup
+### Essential Commands
+- `pnpm install` - Install dependencies
+- `pnpm run dev` - Start development server on http://localhost:3000
+- `pnpm run build` - Create production build
+- `pnpm run start` - Start production server
+- `pnpm run lint` - Run ESLint
 
-- **Node.js**: 18+ required
-- **Package Manager**: pnpm only (avoid npm/yarn for consistency)
-- **IDE**: VS Code recommended with TypeScript extension
-- **Dependencies**: Run `pnpm install` in project root
+### Build Configuration
+- ESLint and TypeScript errors are ignored during builds (`next.config.mjs`)
+- Images are unoptimized in the current configuration
+- Production builds should be tested thoroughly due to disabled error checking
 
-## Claude Workflow Commands
+## Architecture & Code Organization
 
-```bash
-# Development workflow
-pnpm run dev                    # Start dev server (localhost:3000)
+### Key Directories
+- `app/` - Next.js App Router pages and layouts
+  - `app/layout.tsx` - Root layout with fonts and analytics
+  - `app/page.tsx` - Main landing page
+  - Static pages: `chi-siamo/`, `come-funziona/`, `contatti/`
+- `components/` - Reusable React components
+  - `components/ui/` - shadcn/ui component library
+  - `components/header.tsx`, `components/footer.tsx` - Site-wide components
+- `public/` - Static assets (images, favicons)
+- `lib/` - Utility functions
 
-# Quality assurance
-pnpm run lint                   # ESLint check (mandatory before commits)
-pnpm run build                  # Build static export (mandatory before deployment)
+### UI Framework
+- **Primary UI Library**: shadcn/ui with "new-york" style
+- **Component System**: Radix UI primitives with Tailwind CSS
+- **Icons**: Lucide React
+- **Fonts**: Geist Sans and Geist Mono
 
-# Production testing
-pnpm run start                  # Serve static files from out/ (run after build)
+### Import Aliases
+- `@/*` maps to root directory
+- `@/components` for components
+- `@/lib/utils` for utilities
+- `@/hooks` for custom hooks
 
-# Full quality check
-pnpm run lint && pnpm run build # Complete validation pipeline
-```
+## Development Practices
 
-## Development Guidelines
+### Styling
+- Primary styling: Tailwind CSS v4
+- Global styles: `app/globals.css`
+- CSS variables enabled for theming
+- Base color: neutral
 
-### Code Style & Conventions
-- **TypeScript**: Strict mode enabled, use absolute imports with `@/*` aliases
-- **Components**: Follow shadcn/ui patterns, `.tsx` extension for React components
-- **Styling**: Tailwind CSS v4 classes, avoid custom CSS unless necessary
-- **File naming**: kebab-case for files, PascalCase for React components
+### TypeScript Configuration
+- Strict mode enabled
+- Path aliases configured for absolute imports
+- Target: ES6 with modern module resolution
 
-### Component Architecture
-```
-components/
-├── ui/              # shadcn/ui components (don't modify directly)
-├── header.tsx       # Site navigation
-├── footer.tsx       # Site footer
-└── theme-provider.tsx # Theme context
-```
+### Component Development
+- Use shadcn/ui patterns and components
+- Follow existing naming conventions
+- All components use `.tsx` extension
+- Leverage the configured aliases for clean imports
 
-### Page Structure
-```
-app/
-├── layout.tsx       # Root layout (fonts, analytics)
-├── page.tsx         # Landing page
-├── chi-siamo/       # About page (Italian)
-├── come-funziona/   # How it works (Italian)
-└── contatti/        # Contact page (Italian)
-```
+## Testing & Quality
+- Always run `pnpm run lint` before committing
+- Since build errors are ignored in config, manually verify TypeScript compilation
+- Test components in development mode before building
 
-## Testing & Quality Assurance
-
-### Current State
-- **Testing Framework**: None configured (manual testing only)
-- **Quality Gates**: ESLint + Build verification required
-- **Type Checking**: TypeScript strict mode
-- **Build Process**: Static export (`output: 'export'`)
-
-### Quality Workflow
-1. **Pre-commit**: Always run `pnpm run lint`
-2. **Pre-deployment**: Always run `pnpm run build`
-3. **Local testing**: Use `pnpm run start` to test built static files
-4. **Error handling**: Build process ignores lint/type errors (review manually)
-
-### Known Behaviors & Warnings
-- **Build Configuration**: `next.config.mjs` ignores ESLint/TypeScript errors during builds
-- **Static Export**: Project configured for static generation, not SSR
-- **Images**: Unoptimized in Next.js config for static export compatibility
-- **Content**: Italian language throughout (chi-siamo, come-funziona, contatti)
-
-## Component System
-
-### shadcn/ui Configuration
-- **Style**: "new-york" variant
-- **Base color**: "neutral" theme
-- **Icons**: Lucide React library
-- **Path**: `@/components/ui/*`
-
-### Adding New Components
-```bash
-# Use shadcn CLI with existing config
-npx shadcn-ui add [component-name]
-```
-
-## Deployment & Infrastructure
-
-### Production Environment
-- **Live URL**: www.air-coach.com
-- **Platform**: Cloudflare Pages + Workers
-- **Auto-deploy**: Push to `main` branch
-- **Build**: `pnpm run build` → `out/` directory
-
-### API Integration
-- **Backend**: Python API on Vercel (air-coach.vercel.app)
-- **Proxy**: Cloudflare Worker routes `/api/*` to backend (see `cloudflare/` repository folder)
-- **Benefits**: Single domain, CORS handling, CDN acceleration
-
-## Troubleshooting
-
-### Common Issues
-- **Build fails**: Check `pnpm run lint` first
-- **Static export errors**: Verify no SSR features used
-- **Component errors**: Ensure shadcn/ui components imported correctly
-- **Path issues**: Use `@/*` aliases, not relative imports
-
-### Debug Commands
-```bash
-# Check for type errors
-npx tsc --noEmit
-
-# Verbose build output
-pnpm run build --verbose
-
-# Check dependencies
-pnpm list
-```
+## Analytics & Deployment
+- Vercel Analytics integration configured
+- Build output configured for static export (`unoptimized: true` for images)
