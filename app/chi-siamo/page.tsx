@@ -35,7 +35,7 @@ export default function ChiSiamoPage() {
           {/* Mission Image */}
           <div className="relative max-w-4xl mx-auto mb-16">
             <img
-              src="team-of-skydivers-working.png"
+              src="/team-of-skydivers-working.png"
               alt="Il team di AIR Coach al lavoro"
               className="rounded-lg shadow-xl w-full"
             />
