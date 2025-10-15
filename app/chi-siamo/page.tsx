@@ -49,9 +49,10 @@ export default function ChiSiamoPage() {
           {/* Mission Image */}
           <div className="relative max-w-4xl mx-auto mb-16">
             <img
-              src="/team-of-skydivers-working.png"
-              alt="Il team di AIR Coach al lavoro"
+              src="/team-air-coach-paracadutismo.webp"
+              alt="Team AIR Coach - sviluppo app paracadutismo sicuro e innovativo"
               className="rounded-lg shadow-xl w-full"
+              loading="lazy"
             />
           </div>
         </div>

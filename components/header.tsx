@@ -18,7 +18,7 @@ export function Header() {
             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center p-1">
               <Image
                 src="/favicon.svg"
-                alt="AIR Coach Logo"
+                alt="Logo AIR Coach - app paracadutismo"
                 width={32}
                 height={32}
                 className="w-8 h-8 object-contain px-0.5"

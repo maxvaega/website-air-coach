@@ -12,8 +12,8 @@ export function Footer() {
             <div className="mb-4">
               <div className="bg-white rounded-lg p-4 w-fit">
                 <Image
-                  src="/air-coach-logo-full.jpg"
-                  alt="AIR Coach - Always In Reach"
+                  src="/logo-air-coach-full.webp"
+                  alt="Logo AIR Coach - Always In Reach - app paracadutismo professionale"
                   width={200}
                   height={120}
                   className="h-20 w-auto object-contain"

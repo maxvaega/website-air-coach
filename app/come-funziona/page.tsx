@@ -133,9 +133,10 @@ export default function ComeFunzionaPage() {
             </div>
             <div className="relative">
               <img
-                src="/smartphone-air-coach2.jpg"
-                alt="Interfaccia dell'app AIR Coach"
+                src="/app-air-coach-smartphone-demo.webp"
+                alt="Demo app AIR Coach - interfaccia intuitiva per paracadutisti principianti ed esperti"
                 className="rounded-lg shadow-xl mx-auto"
+                loading="lazy"
               />
             </div>
           </div>
