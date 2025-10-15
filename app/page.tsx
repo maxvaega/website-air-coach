@@ -5,6 +5,20 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Shield, Users, Smartphone, Star, ChevronDown } from "lucide-react"
 import Link from "next/link"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'AIR Coach - App Paracadutismo | Always In Reach',
+  description: "AIR Coach: l'app per paracadutisti che ti guida in sicurezza. Consigli esperti sempre disponibili, 24/7. Migliora le tue competenze in paracadutismo.",
+  alternates: {
+    canonical: '/'
+  },
+  openGraph: {
+    title: 'AIR Coach - Guida Digitale per il Paracadutismo',
+    description: "L'app per paracadutisti con consigli esperti disponibili 24/7",
+    url: 'https://website-air-coach.pages.dev',
+  }
+}
 
 export default function HomePage() {
   return (

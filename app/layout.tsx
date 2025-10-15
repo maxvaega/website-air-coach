@@ -5,9 +5,23 @@ import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'AIR Coach: Always In Reach',
-  description: 'La tua guida personale per il paracadutismo. Sempre disponibile ',
-  generator: 'v0.app',
+  title: {
+    default: 'AIR Coach - Guida Digitale per il Paracadutismo',
+    template: '%s | AIR Coach'
+  },
+  description: 'AIR Coach: guida digitale per paracadutisti. Consigli esperti sempre disponibili, 24/7. Migliora le tue competenze in paracadutismo in sicurezza.',
+  metadataBase: new URL('https://website-air-coach.pages.dev'),
+  alternates: {
+    canonical: '/'
+  },
+  openGraph: {
+    title: 'AIR Coach - Guida Digitale per il Paracadutismo',
+    description: 'Guida digitale per paracadutisti con consigli esperti disponibili 24/7',
+    url: 'https://website-air-coach.pages.dev',
+    siteName: 'AIR Coach',
+    locale: 'it_IT',
+    type: 'website',
+  }
 }
 
 export default function RootLayout({
@@ -16,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="it">
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         {children}
         <Analytics />

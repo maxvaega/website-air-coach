@@ -5,6 +5,20 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Download, UserPlus, MessageCircle, Play } from "lucide-react"
 import Link from "next/link"
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Come Funziona AIR Coach - Sicurezza Paracadutismo',
+  description: 'Scopri come funziona AIR Coach: guida passo-passo per paracadutisti. Consigli di sicurezza, supporto 24/7 e apprendimento personalizzato.',
+  alternates: {
+    canonical: '/come-funziona'
+  },
+  openGraph: {
+    title: 'Come Funziona AIR Coach - Sicurezza Paracadutismo',
+    description: 'Guida passo-passo per paracadutisti con sicurezza al primo posto',
+    url: 'https://website-air-coach.pages.dev/come-funziona',
+  }
+}
 
 export default function ComeFunzionaPage() {
   return (
