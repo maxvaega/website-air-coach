@@ -10,14 +10,14 @@ export const metadata: Metadata = {
     template: '%s | AIR Coach'
   },
   description: 'AIR Coach: guida digitale per paracadutisti. Consigli esperti sempre disponibili, 24/7. Migliora le tue competenze in paracadutismo in sicurezza.',
-  metadataBase: new URL('https://website-air-coach.pages.dev'),
+  metadataBase: new URL('https://www.air-coach.com/'),
   alternates: {
-    canonical: '/'
+    canonical: 'https://www.air-coach.com/'
   },
   openGraph: {
     title: 'AIR Coach - Guida Digitale per il Paracadutismo',
     description: 'Guida digitale per paracadutisti con consigli esperti disponibili 24/7',
-    url: 'https://website-air-coach.pages.dev',
+    url: 'https://www.air-coach.com/',
     siteName: 'AIR Coach',
     locale: 'it_IT',
     type: 'website',
