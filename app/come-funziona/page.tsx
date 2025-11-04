@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Come Funziona AIR Coach - Sicurezza Paracadutismo',
   description: 'Scopri come funziona AIR Coach: guida passo-passo per paracadutisti. Consigli di sicurezza, supporto 24/7 e apprendimento personalizzato.',
   alternates: {
-    canonical: '/come-funziona'
+    canonical: 'https://website-air-coach.pages.dev/come-funziona'
   },
   openGraph: {
     title: 'Come Funziona AIR Coach - Sicurezza Paracadutismo',

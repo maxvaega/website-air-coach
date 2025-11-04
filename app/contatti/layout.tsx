@@ -4,7 +4,7 @@ export const metadata: Metadata = {
   title: 'Contatti AIR Coach - Richiedi Accesso Beta',
   description: 'Contatta AIR Coach per richiedere accesso alla beta o informazioni. Supporto per paracadutisti disponibile. Scrivi al team AIR Coach.',
   alternates: {
-    canonical: '/contatti'
+    canonical: 'https://website-air-coach.pages.dev/contatti'
   },
   openGraph: {
     title: 'Contatti AIR Coach - Richiedi Accesso Beta',
