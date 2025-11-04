@@ -9,12 +9,12 @@ export const metadata: Metadata = {
   title: 'Chi Siamo - Team AIR Coach',
   description: 'Scopri il team AIR Coach: innovazione e passione per il paracadutismo. Rendiamo questo sport più sicuro e accessibile con tecnologia avanzata.',
   alternates: {
-    canonical: '/chi-siamo'
+    canonical: 'https://www.air-coach.com/chi-siamo'
   },
   openGraph: {
     title: 'Chi Siamo - Team AIR Coach',
     description: 'Il team che rende il paracadutismo più sicuro e accessibile',
-    url: 'https://website-air-coach.pages.dev/chi-siamo',
+    url: 'https://www.air-coach.com/chi-siamo',
   }
 }
 
