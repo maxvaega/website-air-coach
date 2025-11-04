@@ -19,8 +19,32 @@ export const metadata: Metadata = {
 }
 
 export default function ChiSiamoPage() {
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.air-coach.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Chi Siamo",
+        "item": "https://www.air-coach.com/chi-siamo"
+      }
+    ]
+  }
+
   return (
     <div className="min-h-screen">
+      {/* BreadcrumbList Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <Header />
 
       {/* Hero Section */}

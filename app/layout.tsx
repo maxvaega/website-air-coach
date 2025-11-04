@@ -29,6 +29,20 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AIR Coach",
+    "url": "https://www.air-coach.com",
+    "logo": "https://www.air-coach.com/logo-air-coach-app-paracadutismo.webp",
+    "description": "Guida digitale per il paracadutismo sempre disponibile",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "info@aircoach.com",
+      "contactType": "customer support"
+    }
+  }
+
   return (
     <html lang="it">
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
@@ -39,6 +53,11 @@ export default function RootLayout({
           defer
           src='https://static.cloudflareinsights.com/beacon.min.js'
           data-cf-beacon='{"token": "1c8cdbe053d7499abdec0369a92c2ade"}'
+        />
+        {/* Organization Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
         />
       </body>
     </html>
