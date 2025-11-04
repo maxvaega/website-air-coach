@@ -21,8 +21,21 @@ export const metadata: Metadata = {
 }
 
 export default function HomePage() {
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AIR Coach",
+    "url": "https://www.air-coach.com",
+    "description": "La tua guida personale per il paracadutismo"
+  }
+
   return (
     <div className="min-h-screen">
+      {/* WebSite Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
       <Header />
 
       {/* Hero Section */}

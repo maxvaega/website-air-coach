@@ -22,6 +22,61 @@ export default function ContattiPage() {
     messaggio: "",
   })
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "A cosa serve AIR Coach?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AIR Coach è un'applicazione pensata per guidare e consigliare in sicurezza gli allievi paracadutisti. Una volta installata e configurata sul telefono, l'applicazione sarà disponibile per dare consigli e informazioni per imparare e crescere in sicurezza nel mondo del paracadutismo!"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come posso iniziare?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Attualmente AIR Coach è in fase beta. Puoi richiedere l'accesso compilando il modulo di contatto. Sarà nostra cura ricontattarti non appena ci saranno posti disponibili per la beta."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Quando sarà disponibile pubblicamente?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Stiamo lavorando duramente per completare la fase beta. Prevediamo di rilasciare la versione pubblica nel prossimo futuro. Iscriviti alla nostra newsletter per ricevere aggiornamenti."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "AIR Coach sostituisce l'istruttore?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Assolutamente no! AIR Coach è uno strumento utile che supporta l'apprendimento, ma non sostituisce mai l'esperienza e la supervisione di un istruttore qualificato. La sicurezza rimane sempre la priorità."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Come posso fornire feedback?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Il tuo feedback è prezioso! Puoi inviarci suggerimenti e commenti utilizzando il modulo di contatto, selezionando \"Feedback sull'utilizzo dell'app\" come oggetto. Leggiamo e consideriamo ogni messaggio ricevuto."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "E per saperne di più?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Se sei curioso o interessato al progetto, se ti interessa oppure se vuoi candidarti per contribuire, scrivici un messaggio! ti ricontatteremo al più presto."
+        }
+      }
+    ]
+  }
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
 
@@ -42,6 +97,11 @@ export default function ContattiPage() {
 
   return (
     <div className="min-h-screen">
+      {/* FAQPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <Header />
 
       {/* Hero Section */}
