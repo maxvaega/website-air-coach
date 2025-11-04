@@ -66,9 +66,10 @@ export default function HomePage() {
           {/* Hero Image Placeholder */}
           <div className="relative max-w-4xl mx-auto">
             <img
-              src="/parachutist-in-flight-with-open-blue-sky-and-cloud2.jpg"
-              alt="Paracadutista in volo con cielo aperto"
+              src="/paracadutista-volo-cielo-aperto-hero.webp"
+              alt="Paracadutista in volo con cielo aperto - AIR Coach app paracadutismo sicuro"
               className="rounded-lg shadow-2xl"
+              loading="eager"
             />
           </div>
         </div>
@@ -179,9 +180,10 @@ export default function HomePage() {
 
             <div className="relative">
               <img
-                src="/smartphone-air-coach.jpg"
-                alt="Interfaccia dell'app AIR Coach"
+                src="/app-air-coach-smartphone-interfaccia.webp"
+                alt="Interfaccia app AIR Coach - guida digitale paracadutismo sicuro e accessibile"
                 className="rounded-lg shadow-xl mx-auto"
+                loading="lazy"
               />
             </div>
           </div>
