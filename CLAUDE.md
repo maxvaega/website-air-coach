@@ -132,7 +132,7 @@ This is a Next.js marketing website for "AIR Coach," a skydiving mobile app. The
 ### Development to Production (PRIMARY WORKFLOW)
 1. **Local Development**: `pnpm run dev`
 2. **Build & Test**: `pnpm run build` (generates `out/` directory)
-3. **Git Commit & Push**: Triggers automatic Cloudflare Pages build ✅
+3. **Git Commit & Push**: Triggers automatic Cloudflare Pages build ✅ - building the site in cloudflare takes tipically 1 minute and 10 seconds. Wait 90 seconds after the push to check the build status is completed
 4. **Monitor**: Check status with `npx wrangler pages deployment list --project-name website-air-coach`
 
 ### Debug Workflow (SECONDARY - for testing only)
