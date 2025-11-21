@@ -1,0 +1,8 @@
+# Robots.txt per AIR Coach
+# Consente l'indicizzazione completa del sito
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://website-air-coach.pages.dev/sitemap.xml
