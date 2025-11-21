@@ -5,4 +5,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://website-air-coach.pages.dev/sitemap.xml
+Sitemap: https://www.air-coach.com/sitemap.xml
